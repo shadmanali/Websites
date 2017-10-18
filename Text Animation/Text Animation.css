@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+     width: 40%;
+     height: 250px;
+     box-sizing: border-box;
+     padding: 20px 0;
+     text-align: center;
+     border: 2px solid black; 
+     display: block;
+     margin: 20px auto;
+
+     background-image: url("37864.jpg");
+     background-size: cover;
+    
+ }
+
+.main{
+    color: #ffffff;
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+
+}
+
+.container:hover{
+    opacity: 0.5;
+}
+.main:hover{
+    opacity: 1;
+}

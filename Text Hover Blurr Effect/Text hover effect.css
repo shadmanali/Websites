@@ -1,0 +1,47 @@
+body{
+    cursor: default;
+}
+
+.textWithBlurredBg
+{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin: 4px;
+    position: relative;
+
+} 
+
+.textWithBlurredBg img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.textWithBlurredBg:hover img{
+    
+   filter: blur(2px) brightness(60%); 
+}
+.textWithBlurredBg :not(img)
+{
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+} 
+
+.textWithBlurredBg h2{
+    top: 50%;
+    cursor: default;
+}
+
+.textWithBlurredBg:hover :not(img){
+    
+    opacity: 1;
+}
